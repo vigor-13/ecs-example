@@ -7,5 +7,14 @@
   "private": true,
   "packages": [
     "packages/*"
-  ]
+  ],
+  "scripts": {
+    "clean": "yarn clean:dist && yarn clean:modules && rimraf node_modules",
+    "clean:dist": "manypkg exec rimraf dist",
+    "clean:modules": "manypkg exec rimraf node_modules"
+  },
+  "devDependencies": {
+    "@manypkg/cli": "^0.19.1",
+    "rimraf": "^3.0.2"
+  }
 }
