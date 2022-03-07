@@ -5,10 +5,11 @@
   "author": "wallace5796 <kkw5796@gmail.com>",
   "license": "MIT",
   "private": true,
-  "packages": [
+  "workspaces": [
     "packages/*"
   ],
   "scripts": {
+    "pkg": "manypkg run",
     "clean": "yarn clean:dist && yarn clean:modules && rimraf node_modules",
     "clean:dist": "manypkg exec rimraf dist",
     "clean:modules": "manypkg exec rimraf node_modules"
