@@ -1,0 +1,11 @@
+{
+  "name": "wallace-ecs-example",
+  "version": "0.1.0",
+  "main": "index.js",
+  "author": "wallace5796 <kkw5796@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "packages": [
+    "packages/*"
+  ]
+}
